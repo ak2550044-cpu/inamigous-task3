@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Portfolio Dashboard</title>
+  <style>
+    body { font-family: "Segoe UI", sans-serif; background: #f4f4f4; margin: 0; }
+    header {
+      background: #4CAF50; color: #fff; padding: 15px;
+      text-align: center; font-size: 1.5rem;
+    }
+    .dashboard {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px; padding: 20px;
+    }
+    .card {
+      background: #fff; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px; transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    h2 { color: #4CAF50; margin-bottom: 10px; }
+    .progress-bar {
+      background: #ddd; border-radius: 5px; overflow: hidden; height: 10px;
+    }
+    .progress {
+      background: #4CAF50; height: 10px; width: 0; transition: width 1s ease;
+    }
+    .btn {
+      display: inline-block; margin-top: 10px;
+      background: #4CAF50; color: #fff; padding: 10px 15px;
+      border-radius: 5px; text-decoration: none; font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover { background: #45a049; }
+    footer {
+      background: #333; color: #fff; text-align: center; padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>Amit's Educational Portfolio Dashboard</header>
+
+  <div class="dashboard">
+    <div class="card">
+      <h2> Courses Completed</h2>
+      <ul>
+        <li>Frontend Development</li>
+        <li>AI in Education</li>
+        <li>Formal Languages & Automata</li>
+      </ul>
+      <a href="Certificate of Participation in Online Qualifiers of NextTuring CP Individuals - https://unstop.com/certificate-preview/f88dc0ff-6a69-415d-b0cc-d795f2514cbf?utm_campaign=site-emails" class="btn" target="_blank">View Certificates</a>
+    </div>
+
+    <div class="card">
+      <h2> Achievements</h2>
+      <p>• Built AI-powered portfolio website<br>
+         • Completed Storewise Engineering Assignment<br>
+         • Published learning dashboard project</p>
+      <a href="https://www.linkedin.com/in/amit-kumar-89881732a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn" target="_blank">View LinkedIn</a>
+    </div>
+
+    <div class="card">
+      <h2> Skills Progress</h2>
+      <p>HTML/CSS</p>
+      <div class="progress-bar"><div class="progress" id="htmlProgress"></div></div>
+      <p>JavaScript</p>
+      <div class="progress-bar"><div class="progress" id="jsProgress"></div></div>
+      <p>React</p>
+      <div class="progress-bar"><div class="progress" id="reactProgress"></div></div>
+      <a href="https://github.com/ak2550044-cpu/Inamigous0/tree/main" class="btn" target="_blank">View GitHub</a>
+    </div>
+
+    <div class="card">
+      <h2> Learning Goals</h2>
+      <p>• Master responsive design<br>
+         • Integrate AI tools into web apps<br>
+         • Build dynamic dashboards with live data</p>
+      <a href="mailto:youremail@example.com" class="btn">Contact Me</a>
+    </div>
+  </div>
+
+  <footer>© 2026 Amit | Educational Portfolio Dashboard</footer>
+
+  <script>
+    // Animate progress bars
+    window.onload = () => {
+      document.getElementById("htmlProgress").style.width = "95%";
+      document.getElementById("jsProgress").style.width = "85%";
+      document.getElementById("reactProgress").style.width = "75%";
+    };
+  </script>
+</body>
+</html>

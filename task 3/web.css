@@ -1,0 +1,103 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #004d40;
+  color: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+}
+.btn-edu{
+    border-radius:2px;
+    background-color:#3100d4;
+    border-color:none;
+    color:black;
+}
+/* Anchor tag styled as button */
+a.btn {
+  display: inline-block;
+  background: #4CAF50;   /* Green background */
+  color: #fff;           /* White text */
+  padding: 10px 20px;    /* Spacing */
+  border-radius: 5px;    /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+a.btn:hover {
+  background: #45a049;   /* Darker green */
+  transform: translateY(-2px); /* Slight lift */
+}
+
+/* Optional: Add shadow for depth */
+a.btn:active {
+  background: #388e3c;   /* Even darker when clicked */
+  transform: translateY(0); /* Reset lift */
+}
+
+.header ul { list-style: none; display: flex; gap: 1rem; }
+.header a { color: #fff; text-decoration: none; transition: color 0.3s; }
+.header a:hover { color: #ffeb3b; }
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(to right, #00bcd4, #004d40);
+  color: #fff;
+}
+.hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+.btn {
+  background: #ffeb3b;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+.btn:hover { transform: scale(1.1); }
+
+/* Sections */
+section { padding: 3rem 2rem; text-align: center; }
+.about, .services, .contact { background: #fff; margin: 2rem auto; border-radius: 8px; }
+
+/* Cards */
+.cards { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+.card {
+  background: #e0f2f1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 250px;
+  transition: transform 0.3s;
+}
+.card:hover { transform: translateY(-5px); }
+
+/* Contact */
+form { display: flex; flex-direction: column; gap: 1rem; max-width: 400px; margin: auto; }
+input, textarea { padding: 0.7rem; border: 1px solid #ccc; border-radius: 5px; }
+
+/* Footer */
+.footer {
+  text-align: center;
+  background: #004d40;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Animations */
+.fade-in { opacity: 0; transform: translateY(20px); animation: fadeInUp 1s ease forwards; }
+@keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
